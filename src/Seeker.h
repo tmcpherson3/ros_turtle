@@ -10,12 +10,12 @@ class Seeker
 {
 	public:
 		Seeker();
-		void computeAndPublishVelCmd(turtlesim::Pose targetPose);
 		void runSeekerLoop();
 	private:
 		ros::Subscriber poseSub;
 		ros::NodeHandle n;
 		ros::Publisher seekerCmdPub;
 		ros::ServiceClient spawnClient;
+		void computeAndPublishVelCmd(const turtlesim::Pose targetPose);
 };
 #endif
