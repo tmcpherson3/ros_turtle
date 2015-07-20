@@ -1,5 +1,4 @@
 #include "Seeker.h"
-#include <string>
 
 // Constructor
 Seeker::Seeker()
